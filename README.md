@@ -39,22 +39,7 @@ Vintage: giorni da cui il cliente è assicurato con AssurePredict.
 
 Response: 1 se il cliente ha accettato la proposta di cross-sell, 0 altrimenti.
 
-Attività:
-1. Esplorazione del Dataset
-L'esplorazione preliminare del dataset permetterà di comprendere meglio la distribuzione delle caratteristiche e delle variabili target. In particolare, si analizzeranno:
 
-La distribuzione della variabile "Response", per identificare eventuali sbilanciamenti tra clienti che accettano o rifiutano l'offerta di cross-sell.
-Le relazioni tra variabili chiave come Annual Premium, Vehicle Age, Previously Insured, e la risposta del cliente.
-Valore aggiunto: Un'accurata esplorazione dei dati permette di identificare pattern nascosti e punti critici che influenzeranno il successo del modello predittivo.
-
-2. Gestione dello Sbilanciamento delle Classi
-La variabile target "Response" potrebbe essere sbilanciata, con molti più clienti che rifiutano l'offerta rispetto a quelli che la accettano. Per affrontare questo problema, verranno utilizzate tecniche di:
-
-Class Weights: penalizzazione della classe più frequente nel modello.
-Oversampling o Undersampling: creazione di un dataset più bilanciato per migliorare la capacità del modello di generalizzare.
-Valore aggiunto: Gestire correttamente lo sbilanciamento delle classi è cruciale per evitare modelli che abbiano un alto tasso di falsi negativi, migliorando così la precisione del cross-sell.
-
-3. Costruzione del Modello Predittivo
 Utilizzando algoritmi di machine learning, verrà costruito un modello che predice la probabilità che un cliente risponda positivamente all'offerta di cross-sell.
 
 Valore aggiunto: Il modello predittivo permetterà a AssurePredict di identificare con precisione i clienti più propensi a sottoscrivere una polizza aggiuntiva, migliorando così il ritorno sull'investimento delle campagne di marketing.
